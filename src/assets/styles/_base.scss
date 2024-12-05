@@ -1,0 +1,32 @@
+// Global Styles
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+main {
+	min-height: $main-height;
+}
+
+a {
+	color: inherit;
+	transition: .3s ease;
+	text-decoration: none
+}
+
+.flex-center-row {
+	@include flex-center(row);
+}
+
+.flex-center-col {
+	@include flex-center(column);
+}
